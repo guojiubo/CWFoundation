@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0822E5619B1AF1900A3DB53 /* CWNotificationConstans.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E3C19B1AF1900A3DB53 /* CWNotificationConstans.m */; };
+		A0822E5719B1AF1900A3DB53 /* NSArray+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E3F19B1AF1900A3DB53 /* NSArray+CWAdditions.m */; };
+		A0822E5819B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4119B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.m */; };
+		A0822E5919B1AF1900A3DB53 /* NSNotification+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4319B1AF1900A3DB53 /* NSNotification+CWAdditions.m */; };
+		A0822E5A19B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4519B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.m */; };
+		A0822E5B19B1AF1900A3DB53 /* NSString+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4719B1AF1900A3DB53 /* NSString+CWAdditions.m */; };
+		A0822E5C19B1AF1900A3DB53 /* UIApplication+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4A19B1AF1900A3DB53 /* UIApplication+CWAdditions.m */; };
+		A0822E5D19B1AF1900A3DB53 /* UIColor+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4C19B1AF1900A3DB53 /* UIColor+CWAdditions.m */; };
+		A0822E5E19B1AF1900A3DB53 /* UINavigationController+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4F19B1AF1900A3DB53 /* UINavigationController+CWAdditions.m */; };
+		A0822E5F19B1AF1900A3DB53 /* UIScrollView+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E5119B1AF1900A3DB53 /* UIScrollView+CWAdditions.m */; };
+		A0822E6019B1AF1900A3DB53 /* UIView+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E5319B1AF1900A3DB53 /* UIView+CWAdditions.m */; };
+		A0822E6119B1AF1900A3DB53 /* UIWebView+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E5519B1AF1900A3DB53 /* UIWebView+CWAdditions.m */; };
 		A0E6454C19AF66FB00A6731E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6454B19AF66FB00A6731E /* Foundation.framework */; };
 		A0E6454E19AF66FB00A6731E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6454D19AF66FB00A6731E /* CoreGraphics.framework */; };
 		A0E6455019AF66FB00A6731E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6454F19AF66FB00A6731E /* UIKit.framework */; };
@@ -19,9 +31,6 @@
 		A0E6458519AF67AA00A6731E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0E6457F19AF67AA00A6731E /* InfoPlist.strings */; };
 		A0E6458619AF67AA00A6731E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E6458119AF67AA00A6731E /* Images.xcassets */; };
 		A0E6458719AF67AA00A6731E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E6458219AF67AA00A6731E /* main.m */; };
-		A0E645D019AF6F0800A6731E /* UIView+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E645CF19AF6F0800A6731E /* UIView+CWAdditions.m */; };
-		A0E645D319AF714D00A6731E /* UIColor+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E645D219AF714D00A6731E /* UIColor+CWAdditions.m */; };
-		A0E645D619AF768900A6731E /* UIApplication+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E645D519AF768900A6731E /* UIApplication+CWAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A0822E3919B1AF1900A3DB53 /* CWFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWFoundation.h; sourceTree = "<group>"; };
+		A0822E3B19B1AF1900A3DB53 /* CWNotificationConstans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWNotificationConstans.h; sourceTree = "<group>"; };
+		A0822E3C19B1AF1900A3DB53 /* CWNotificationConstans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWNotificationConstans.m; sourceTree = "<group>"; };
+		A0822E3D19B1AF1900A3DB53 /* Foundation+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E3E19B1AF1900A3DB53 /* NSArray+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E3F19B1AF1900A3DB53 /* NSArray+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E4019B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E4119B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E4219B1AF1900A3DB53 /* NSNotification+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotification+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E4319B1AF1900A3DB53 /* NSNotification+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E4419B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E4519B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E4619B1AF1900A3DB53 /* NSString+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E4719B1AF1900A3DB53 /* NSString+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E4919B1AF1900A3DB53 /* UIApplication+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E4A19B1AF1900A3DB53 /* UIApplication+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E4B19B1AF1900A3DB53 /* UIColor+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E4C19B1AF1900A3DB53 /* UIColor+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E4D19B1AF1900A3DB53 /* UIKit+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E4E19B1AF1900A3DB53 /* UINavigationController+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E4F19B1AF1900A3DB53 /* UINavigationController+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E5019B1AF1900A3DB53 /* UIScrollView+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E5119B1AF1900A3DB53 /* UIScrollView+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E5219B1AF1900A3DB53 /* UIView+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E5319B1AF1900A3DB53 /* UIView+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E5419B1AF1900A3DB53 /* UIWebView+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+CWAdditions.h"; sourceTree = "<group>"; };
+		A0822E5519B1AF1900A3DB53 /* UIWebView+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+CWAdditions.m"; sourceTree = "<group>"; };
 		A0E6454819AF66FB00A6731E /* CWFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E6454B19AF66FB00A6731E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0E6454D19AF66FB00A6731E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -51,15 +87,6 @@
 		A0E6458019AF67AA00A6731E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A0E6458119AF67AA00A6731E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0E6458219AF67AA00A6731E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A0E6458C19AF6A7A00A6731E /* CWFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWFoundation.h; sourceTree = "<group>"; };
-		A0E6458D19AF6AA700A6731E /* Foundation+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+CWAdditions.h"; sourceTree = "<group>"; };
-		A0E6458E19AF6AC300A6731E /* UIKit+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIKit+CWAdditions.h"; sourceTree = "<group>"; };
-		A0E645CE19AF6F0800A6731E /* UIView+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CWAdditions.h"; sourceTree = "<group>"; };
-		A0E645CF19AF6F0800A6731E /* UIView+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CWAdditions.m"; sourceTree = "<group>"; };
-		A0E645D119AF714D00A6731E /* UIColor+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CWAdditions.h"; sourceTree = "<group>"; };
-		A0E645D219AF714D00A6731E /* UIColor+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CWAdditions.m"; sourceTree = "<group>"; };
-		A0E645D419AF768900A6731E /* UIApplication+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CWAdditions.h"; sourceTree = "<group>"; };
-		A0E645D519AF768900A6731E /* UIApplication+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CWAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,11 +113,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A0822E3819B1AF1900A3DB53 /* CWFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				A0822E3919B1AF1900A3DB53 /* CWFoundation.h */,
+				A0822E3A19B1AF1900A3DB53 /* Foundation+CWAdditions */,
+				A0822E4819B1AF1900A3DB53 /* UIKit+CWAdditions */,
+			);
+			path = CWFoundation;
+			sourceTree = "<group>";
+		};
+		A0822E3A19B1AF1900A3DB53 /* Foundation+CWAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				A0822E3B19B1AF1900A3DB53 /* CWNotificationConstans.h */,
+				A0822E3C19B1AF1900A3DB53 /* CWNotificationConstans.m */,
+				A0822E3D19B1AF1900A3DB53 /* Foundation+CWAdditions.h */,
+				A0822E3E19B1AF1900A3DB53 /* NSArray+CWAdditions.h */,
+				A0822E3F19B1AF1900A3DB53 /* NSArray+CWAdditions.m */,
+				A0822E4019B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.h */,
+				A0822E4119B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.m */,
+				A0822E4219B1AF1900A3DB53 /* NSNotification+CWAdditions.h */,
+				A0822E4319B1AF1900A3DB53 /* NSNotification+CWAdditions.m */,
+				A0822E4419B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.h */,
+				A0822E4519B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.m */,
+				A0822E4619B1AF1900A3DB53 /* NSString+CWAdditions.h */,
+				A0822E4719B1AF1900A3DB53 /* NSString+CWAdditions.m */,
+			);
+			path = "Foundation+CWAdditions";
+			sourceTree = "<group>";
+		};
+		A0822E4819B1AF1900A3DB53 /* UIKit+CWAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				A0822E4919B1AF1900A3DB53 /* UIApplication+CWAdditions.h */,
+				A0822E4A19B1AF1900A3DB53 /* UIApplication+CWAdditions.m */,
+				A0822E4B19B1AF1900A3DB53 /* UIColor+CWAdditions.h */,
+				A0822E4C19B1AF1900A3DB53 /* UIColor+CWAdditions.m */,
+				A0822E4D19B1AF1900A3DB53 /* UIKit+CWAdditions.h */,
+				A0822E4E19B1AF1900A3DB53 /* UINavigationController+CWAdditions.h */,
+				A0822E4F19B1AF1900A3DB53 /* UINavigationController+CWAdditions.m */,
+				A0822E5019B1AF1900A3DB53 /* UIScrollView+CWAdditions.h */,
+				A0822E5119B1AF1900A3DB53 /* UIScrollView+CWAdditions.m */,
+				A0822E5219B1AF1900A3DB53 /* UIView+CWAdditions.h */,
+				A0822E5319B1AF1900A3DB53 /* UIView+CWAdditions.m */,
+				A0822E5419B1AF1900A3DB53 /* UIWebView+CWAdditions.h */,
+				A0822E5519B1AF1900A3DB53 /* UIWebView+CWAdditions.m */,
+			);
+			path = "UIKit+CWAdditions";
+			sourceTree = "<group>";
+		};
 		A0E6453F19AF66FB00A6731E = {
 			isa = PBXGroup;
 			children = (
+				A0822E3819B1AF1900A3DB53 /* CWFoundation */,
 				A0E6457A19AF67AA00A6731E /* Example */,
-				A0E6455119AF66FB00A6731E /* CWFoundation */,
 				A0E6456A19AF66FB00A6731E /* CWFoundationTests */,
 				A0E6454A19AF66FB00A6731E /* Frameworks */,
 				A0E6454919AF66FB00A6731E /* Products */,
@@ -115,16 +192,6 @@
 				A0E6456419AF66FB00A6731E /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A0E6455119AF66FB00A6731E /* CWFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				A0E6458C19AF6A7A00A6731E /* CWFoundation.h */,
-				A0E6458A19AF6A5700A6731E /* Foundation+CWAdditions */,
-				A0E6458B19AF6A5700A6731E /* UIKit+CWAdditions */,
-			);
-			path = CWFoundation;
 			sourceTree = "<group>";
 		};
 		A0E6456A19AF66FB00A6731E /* CWFoundationTests */ = {
@@ -165,28 +232,6 @@
 				A0E6458219AF67AA00A6731E /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		A0E6458A19AF6A5700A6731E /* Foundation+CWAdditions */ = {
-			isa = PBXGroup;
-			children = (
-				A0E6458D19AF6AA700A6731E /* Foundation+CWAdditions.h */,
-			);
-			path = "Foundation+CWAdditions";
-			sourceTree = "<group>";
-		};
-		A0E6458B19AF6A5700A6731E /* UIKit+CWAdditions */ = {
-			isa = PBXGroup;
-			children = (
-				A0E6458E19AF6AC300A6731E /* UIKit+CWAdditions.h */,
-				A0E645CE19AF6F0800A6731E /* UIView+CWAdditions.h */,
-				A0E645CF19AF6F0800A6731E /* UIView+CWAdditions.m */,
-				A0E645D119AF714D00A6731E /* UIColor+CWAdditions.h */,
-				A0E645D219AF714D00A6731E /* UIColor+CWAdditions.m */,
-				A0E645D419AF768900A6731E /* UIApplication+CWAdditions.h */,
-				A0E645D519AF768900A6731E /* UIApplication+CWAdditions.m */,
-			);
-			path = "UIKit+CWAdditions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,11 +330,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0822E5819B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.m in Sources */,
+				A0822E6119B1AF1900A3DB53 /* UIWebView+CWAdditions.m in Sources */,
+				A0822E5719B1AF1900A3DB53 /* NSArray+CWAdditions.m in Sources */,
+				A0822E5C19B1AF1900A3DB53 /* UIApplication+CWAdditions.m in Sources */,
+				A0822E5D19B1AF1900A3DB53 /* UIColor+CWAdditions.m in Sources */,
+				A0822E5619B1AF1900A3DB53 /* CWNotificationConstans.m in Sources */,
 				A0E6458319AF67AA00A6731E /* CWAppDelegate.m in Sources */,
-				A0E645D319AF714D00A6731E /* UIColor+CWAdditions.m in Sources */,
-				A0E645D619AF768900A6731E /* UIApplication+CWAdditions.m in Sources */,
-				A0E645D019AF6F0800A6731E /* UIView+CWAdditions.m in Sources */,
+				A0822E6019B1AF1900A3DB53 /* UIView+CWAdditions.m in Sources */,
 				A0E6458719AF67AA00A6731E /* main.m in Sources */,
+				A0822E5B19B1AF1900A3DB53 /* NSString+CWAdditions.m in Sources */,
+				A0822E5919B1AF1900A3DB53 /* NSNotification+CWAdditions.m in Sources */,
+				A0822E5F19B1AF1900A3DB53 /* UIScrollView+CWAdditions.m in Sources */,
+				A0822E5E19B1AF1900A3DB53 /* UINavigationController+CWAdditions.m in Sources */,
+				A0822E5A19B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

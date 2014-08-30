@@ -9,3 +9,8 @@
 #import "UIView+CWAdditions.h"
 #import "UIColor+CWAdditions.h"
 #import "UIApplication+CWAdditions.h"
+#import "UIScrollView+CWAdditions.h"
+#import "UINavigationController+CWAdditions.h"
+#import "UIWebView+CWAdditions.h"
+
+
