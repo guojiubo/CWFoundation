@@ -18,7 +18,19 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "6.0"
   s.requires_arc = true
   s.source       = { :git => "https://github.com/guojiubo/CWFoundation.git", :tag => "0.0.3" }
-  s.source_files = "CWFoundation/*", "CWFoundation/**/*"
+  s.source_files = "CWFoundation/*.{h,m}"
   s.frameworks = 'Foundation', 'UIKit'
+
+  s.subspec 'Foundation+CWAdditions' do |ss|
+    ss.source_files = 'CWFoundation/Foundation+CWAdditions/*.{h,m}'
+  end
+
+  s.subspec 'UIKit+CWAdditions' do |ss|
+    ss.source_files = 'CWFoundation/UIKit+CWAdditions/*.{h,m}'
+  end
+
+  s.subspec 'Utilities' do |ss|
+    ss.source_files = 'CWFoundation/Utilities/*.{h,m}'
+  end
 
 end
