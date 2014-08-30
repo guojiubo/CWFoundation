@@ -7,7 +7,5 @@
 //
 
 #import "Foundation+CWAdditions.h"
-
-#if TARGET_OS_IPHONE
 #import "UIKit+CWAdditions.h"
-#endif
+#import "CWUtilities.h"

@@ -92,6 +92,7 @@
 		A0822E7519B227B800A3DB53 /* CWObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWObjectCache.m; sourceTree = "<group>"; };
 		A0822E7719B2286800A3DB53 /* CWHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWHTTPFetcher.h; sourceTree = "<group>"; };
 		A0822E7819B2286800A3DB53 /* CWHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWHTTPFetcher.m; sourceTree = "<group>"; };
+		A0822E7A19B22A2600A3DB53 /* CWUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWUtilities.h; sourceTree = "<group>"; };
 		A0E6454819AF66FB00A6731E /* CWFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E6454B19AF66FB00A6731E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0E6454D19AF66FB00A6731E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -188,6 +189,7 @@
 		A0822E6319B21ED000A3DB53 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				A0822E7A19B22A2600A3DB53 /* CWUtilities.h */,
 				A0822E6A19B21F2C00A3DB53 /* CWBlockFunctions.h */,
 				A0822E6B19B21F2C00A3DB53 /* CWBlockFunctions.m */,
 				A0822E6419B21EE200A3DB53 /* CWActionSheet.h */,
