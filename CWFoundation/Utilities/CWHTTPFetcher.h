@@ -1,6 +1,6 @@
 //
-//  FSHTTPFetcher.h
-//  FutureStep
+//  CWHTTPFetcher.h
+//  CWFoundation
 //
 //  Created by guojiubo on 8/6/14.
 //
@@ -10,7 +10,7 @@
 
 @interface CWHTTPFetcher : NSObject
 
-typedef void (^FSFetchCompletionBlock) (CWHTTPFetcher *fetcher, NSError *error);
+typedef void (^CWHTTPFetcherBlock) (CWHTTPFetcher *fetcher, NSError *error);
 
 /**
  *  Can be anything, determined by subclass's implementation
@@ -18,7 +18,7 @@ typedef void (^FSFetchCompletionBlock) (CWHTTPFetcher *fetcher, NSError *error);
 @property (nonatomic, strong) id responseObject;
 
 /**
- *  The some as FSFetchCompletionBlock's error
+ *  The some as CWHTTPFetcherBlock's error
  */
 @property (nonatomic, strong) NSError *error;
 

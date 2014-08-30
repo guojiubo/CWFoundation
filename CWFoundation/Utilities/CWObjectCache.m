@@ -1,6 +1,6 @@
 //
-//  FSObjectCache.m
-//  FutureStep
+//  CWObjectCache.m
+//  CWFoundation
 //
 //  Created by Guojiubo on 14-5-21.
 //

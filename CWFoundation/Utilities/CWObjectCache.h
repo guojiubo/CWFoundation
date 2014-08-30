@@ -1,6 +1,6 @@
 //
-//  FSObjectCache.h
-//  FutureStep
+//  CWObjectCache.h
+//  CWFoundation
 //
 //  Created by Guojiubo on 14-5-21.
 //
