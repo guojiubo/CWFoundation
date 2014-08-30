@@ -19,6 +19,13 @@
 		A0822E5F19B1AF1900A3DB53 /* UIScrollView+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E5119B1AF1900A3DB53 /* UIScrollView+CWAdditions.m */; };
 		A0822E6019B1AF1900A3DB53 /* UIView+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E5319B1AF1900A3DB53 /* UIView+CWAdditions.m */; };
 		A0822E6119B1AF1900A3DB53 /* UIWebView+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E5519B1AF1900A3DB53 /* UIWebView+CWAdditions.m */; };
+		A0822E6619B21EE200A3DB53 /* CWActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E6519B21EE200A3DB53 /* CWActionSheet.m */; };
+		A0822E6919B21EF500A3DB53 /* CWAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E6819B21EF500A3DB53 /* CWAlertView.m */; };
+		A0822E6C19B21F2C00A3DB53 /* CWBlockFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E6B19B21F2C00A3DB53 /* CWBlockFunctions.m */; };
+		A0822E7219B2273E00A3DB53 /* CWImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E6F19B2273E00A3DB53 /* CWImagePickerController.m */; };
+		A0822E7319B2273E00A3DB53 /* CWFieldValidation.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E7119B2273E00A3DB53 /* CWFieldValidation.m */; };
+		A0822E7619B227B800A3DB53 /* CWObjectCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E7519B227B800A3DB53 /* CWObjectCache.m */; };
+		A0822E7919B2286800A3DB53 /* CWHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E7819B2286800A3DB53 /* CWHTTPFetcher.m */; };
 		A0E6454C19AF66FB00A6731E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6454B19AF66FB00A6731E /* Foundation.framework */; };
 		A0E6454E19AF66FB00A6731E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6454D19AF66FB00A6731E /* CoreGraphics.framework */; };
 		A0E6455019AF66FB00A6731E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0E6454F19AF66FB00A6731E /* UIKit.framework */; };
@@ -71,6 +78,20 @@
 		A0822E5319B1AF1900A3DB53 /* UIView+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CWAdditions.m"; sourceTree = "<group>"; };
 		A0822E5419B1AF1900A3DB53 /* UIWebView+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+CWAdditions.h"; sourceTree = "<group>"; };
 		A0822E5519B1AF1900A3DB53 /* UIWebView+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+CWAdditions.m"; sourceTree = "<group>"; };
+		A0822E6419B21EE200A3DB53 /* CWActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWActionSheet.h; sourceTree = "<group>"; };
+		A0822E6519B21EE200A3DB53 /* CWActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWActionSheet.m; sourceTree = "<group>"; };
+		A0822E6719B21EF500A3DB53 /* CWAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWAlertView.h; sourceTree = "<group>"; };
+		A0822E6819B21EF500A3DB53 /* CWAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWAlertView.m; sourceTree = "<group>"; };
+		A0822E6A19B21F2C00A3DB53 /* CWBlockFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWBlockFunctions.h; sourceTree = "<group>"; };
+		A0822E6B19B21F2C00A3DB53 /* CWBlockFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWBlockFunctions.m; sourceTree = "<group>"; };
+		A0822E6E19B2273E00A3DB53 /* CWImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWImagePickerController.h; sourceTree = "<group>"; };
+		A0822E6F19B2273E00A3DB53 /* CWImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWImagePickerController.m; sourceTree = "<group>"; };
+		A0822E7019B2273E00A3DB53 /* CWFieldValidation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWFieldValidation.h; sourceTree = "<group>"; };
+		A0822E7119B2273E00A3DB53 /* CWFieldValidation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWFieldValidation.m; sourceTree = "<group>"; };
+		A0822E7419B227B800A3DB53 /* CWObjectCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWObjectCache.h; sourceTree = "<group>"; };
+		A0822E7519B227B800A3DB53 /* CWObjectCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWObjectCache.m; sourceTree = "<group>"; };
+		A0822E7719B2286800A3DB53 /* CWHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWHTTPFetcher.h; sourceTree = "<group>"; };
+		A0822E7819B2286800A3DB53 /* CWHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWHTTPFetcher.m; sourceTree = "<group>"; };
 		A0E6454819AF66FB00A6731E /* CWFoundation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWFoundation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E6454B19AF66FB00A6731E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A0E6454D19AF66FB00A6731E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				A0822E3919B1AF1900A3DB53 /* CWFoundation.h */,
+				A0822E6319B21ED000A3DB53 /* Utilities */,
 				A0822E3A19B1AF1900A3DB53 /* Foundation+CWAdditions */,
 				A0822E4819B1AF1900A3DB53 /* UIKit+CWAdditions */,
 			);
@@ -126,9 +148,9 @@
 		A0822E3A19B1AF1900A3DB53 /* Foundation+CWAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				A0822E3D19B1AF1900A3DB53 /* Foundation+CWAdditions.h */,
 				A0822E3B19B1AF1900A3DB53 /* CWNotificationConstans.h */,
 				A0822E3C19B1AF1900A3DB53 /* CWNotificationConstans.m */,
-				A0822E3D19B1AF1900A3DB53 /* Foundation+CWAdditions.h */,
 				A0822E3E19B1AF1900A3DB53 /* NSArray+CWAdditions.h */,
 				A0822E3F19B1AF1900A3DB53 /* NSArray+CWAdditions.m */,
 				A0822E4019B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.h */,
@@ -161,6 +183,27 @@
 				A0822E5519B1AF1900A3DB53 /* UIWebView+CWAdditions.m */,
 			);
 			path = "UIKit+CWAdditions";
+			sourceTree = "<group>";
+		};
+		A0822E6319B21ED000A3DB53 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A0822E6A19B21F2C00A3DB53 /* CWBlockFunctions.h */,
+				A0822E6B19B21F2C00A3DB53 /* CWBlockFunctions.m */,
+				A0822E6419B21EE200A3DB53 /* CWActionSheet.h */,
+				A0822E6519B21EE200A3DB53 /* CWActionSheet.m */,
+				A0822E6719B21EF500A3DB53 /* CWAlertView.h */,
+				A0822E6819B21EF500A3DB53 /* CWAlertView.m */,
+				A0822E6E19B2273E00A3DB53 /* CWImagePickerController.h */,
+				A0822E6F19B2273E00A3DB53 /* CWImagePickerController.m */,
+				A0822E7019B2273E00A3DB53 /* CWFieldValidation.h */,
+				A0822E7119B2273E00A3DB53 /* CWFieldValidation.m */,
+				A0822E7419B227B800A3DB53 /* CWObjectCache.h */,
+				A0822E7519B227B800A3DB53 /* CWObjectCache.m */,
+				A0822E7719B2286800A3DB53 /* CWHTTPFetcher.h */,
+				A0822E7819B2286800A3DB53 /* CWHTTPFetcher.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		A0E6453F19AF66FB00A6731E = {
@@ -331,17 +374,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0822E5819B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.m in Sources */,
+				A0822E7919B2286800A3DB53 /* CWHTTPFetcher.m in Sources */,
 				A0822E6119B1AF1900A3DB53 /* UIWebView+CWAdditions.m in Sources */,
 				A0822E5719B1AF1900A3DB53 /* NSArray+CWAdditions.m in Sources */,
 				A0822E5C19B1AF1900A3DB53 /* UIApplication+CWAdditions.m in Sources */,
+				A0822E6619B21EE200A3DB53 /* CWActionSheet.m in Sources */,
+				A0822E6919B21EF500A3DB53 /* CWAlertView.m in Sources */,
 				A0822E5D19B1AF1900A3DB53 /* UIColor+CWAdditions.m in Sources */,
 				A0822E5619B1AF1900A3DB53 /* CWNotificationConstans.m in Sources */,
 				A0E6458319AF67AA00A6731E /* CWAppDelegate.m in Sources */,
+				A0822E7319B2273E00A3DB53 /* CWFieldValidation.m in Sources */,
+				A0822E7619B227B800A3DB53 /* CWObjectCache.m in Sources */,
 				A0822E6019B1AF1900A3DB53 /* UIView+CWAdditions.m in Sources */,
 				A0E6458719AF67AA00A6731E /* main.m in Sources */,
 				A0822E5B19B1AF1900A3DB53 /* NSString+CWAdditions.m in Sources */,
 				A0822E5919B1AF1900A3DB53 /* NSNotification+CWAdditions.m in Sources */,
 				A0822E5F19B1AF1900A3DB53 /* UIScrollView+CWAdditions.m in Sources */,
+				A0822E7219B2273E00A3DB53 /* CWImagePickerController.m in Sources */,
+				A0822E6C19B21F2C00A3DB53 /* CWBlockFunctions.m in Sources */,
 				A0822E5E19B1AF1900A3DB53 /* UINavigationController+CWAdditions.m in Sources */,
 				A0822E5A19B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.m in Sources */,
 			);
