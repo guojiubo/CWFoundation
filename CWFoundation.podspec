@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CWFoundation"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "CWFoundation is a collection of utility methods and category extensions for Foundation and UIKit classes to accelerate development."
   s.homepage     = "https://github.com/guojiubo/CWFoundation"
   s.license      = "MIT"
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.platform     = :ios, "6.0"
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/guojiubo/CWFoundation.git", :tag => "0.0.2" }
-  s.source_files = "CWFoundation/*"
+  s.source       = { :git => "https://github.com/guojiubo/CWFoundation.git", :tag => "0.0.3" }
+  s.source_files = "CWFoundation/*", "CWFoundation/**/*"
   s.frameworks = 'Foundation', 'UIKit'
 
 end
