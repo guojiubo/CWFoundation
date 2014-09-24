@@ -151,6 +151,10 @@
 
 - (void)setDelegate:(id <UIAlertViewDelegate>)delegate
 {
+    if (!delegate) {
+        return;
+    }
+    
     [NSException raise:@"CWFoundationException" format:@"Don't set delegate, set externalDelegate instead."];
 }
 
