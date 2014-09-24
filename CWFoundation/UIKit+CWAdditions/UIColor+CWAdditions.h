@@ -11,6 +11,7 @@
 UIColor* CW_RGBColor(CGFloat r, CGFloat g, CGFloat b);
 UIColor* CW_RGBAColor(CGFloat r, CGFloat g, CGFloat b, CGFloat a);
 UIColor* CW_HEXColor(NSInteger hex);
+UIColor* CW_HEXAColor(NSInteger hex, CGFloat a);
 
 @interface UIColor (CWAdditions)
 

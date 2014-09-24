@@ -20,7 +20,12 @@ UIColor* CW_RGBAColor(CGFloat r, CGFloat g, CGFloat b, CGFloat a)
 
 UIColor* CW_HEXColor(NSInteger hex)
 {
-    return CW_RGBColor((hex>>16)&0xFF, (hex>>8)&0xFF, hex&0xFF);
+    return CW_HEXAColor(hex, 1.0);
+}
+
+UIColor* CW_HEXAColor(NSInteger hex, CGFloat a)
+{
+    return CW_RGBAColor((hex>>16)&0xFF, (hex>>8)&0xFF, hex&0xFF, a);
 }
 
 @implementation UIColor (CWAdditions)
