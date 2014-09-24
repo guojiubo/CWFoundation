@@ -14,11 +14,7 @@
 
 @implementation CWActionSheet
 {
-	__weak id <UIActionSheetDelegate> _externalDelegate;
-	
 	NSMutableDictionary *_actionsPerIndex;
-	
-	BOOL _isDeallocating;
 }
 
 - (id)init
@@ -26,7 +22,7 @@
     self = [super init];
     if (self) {
         _actionsPerIndex = [[NSMutableDictionary alloc] init];
-        self.delegate = self;
+        [super setDelegate:self];
     }
     return self;
 }
@@ -66,11 +62,6 @@
 	return self;
 }
 
-- (void)dealloc
-{
-	_isDeallocating = YES;
-}
-
 - (NSInteger)addButtonWithTitle:(NSString *)title block:(CWActionSheetBlock)block
 {
 	NSInteger retIndex = [self addButtonWithTitle:title];
@@ -108,36 +99,36 @@
 
 - (void)actionSheetCancel:(UIActionSheet *)actionSheet
 {
-	if ([_externalDelegate respondsToSelector:@selector(actionSheetCancel:)]) {
-		[_externalDelegate actionSheetCancel:actionSheet];
+	if ([self.externalDelegate respondsToSelector:@selector(actionSheetCancel:)]) {
+		[self.externalDelegate actionSheetCancel:actionSheet];
 	}
 }
 
 - (void)willPresentActionSheet:(UIActionSheet *)actionSheet
 {
-	if ([_externalDelegate respondsToSelector:@selector(willPresentActionSheet:)]) {
-		[_externalDelegate willPresentActionSheet:actionSheet];
+	if ([self.externalDelegate respondsToSelector:@selector(willPresentActionSheet:)]) {
+		[self.externalDelegate willPresentActionSheet:actionSheet];
 	}
 }
 
 - (void)didPresentActionSheet:(UIActionSheet *)actionSheet
 {
-	if ([_externalDelegate respondsToSelector:@selector(didPresentActionSheet:)]) {
-		[_externalDelegate didPresentActionSheet:actionSheet];
+	if ([self.externalDelegate respondsToSelector:@selector(didPresentActionSheet:)]) {
+		[self.externalDelegate didPresentActionSheet:actionSheet];
 	}
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet willDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-	if ([_externalDelegate respondsToSelector:@selector(actionSheet:willDismissWithButtonIndex:)]) {
-		[_externalDelegate actionSheet:actionSheet willDismissWithButtonIndex:buttonIndex];
+	if ([self.externalDelegate respondsToSelector:@selector(actionSheet:willDismissWithButtonIndex:)]) {
+		[self.externalDelegate actionSheet:actionSheet willDismissWithButtonIndex:buttonIndex];
 	}
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-    if ([_externalDelegate respondsToSelector:@selector(actionSheet:didDismissWithButtonIndex:)]) {
-		[_externalDelegate actionSheet:actionSheet didDismissWithButtonIndex:buttonIndex];
+    if ([self.externalDelegate respondsToSelector:@selector(actionSheet:didDismissWithButtonIndex:)]) {
+		[self.externalDelegate actionSheet:actionSheet didDismissWithButtonIndex:buttonIndex];
 	}
 }
 
@@ -151,36 +142,16 @@
 		block();
 	}
     
-    if ([_externalDelegate respondsToSelector:@selector(actionSheet:clickedButtonAtIndex:)]) {
-        [_externalDelegate actionSheet:actionSheet clickedButtonAtIndex:buttonIndex];
+    if ([self.externalDelegate respondsToSelector:@selector(actionSheet:clickedButtonAtIndex:)]) {
+        [self.externalDelegate actionSheet:actionSheet clickedButtonAtIndex:buttonIndex];
     }
 }
 
 #pragma mark - Properties
 
-- (id <UIActionSheetDelegate>)delegate
+- (void)setDelegate:(id <UIAlertViewDelegate>)delegate
 {
-	return _externalDelegate;
-}
-
-- (void)setDelegate:(id <UIActionSheetDelegate>)delegate
-{
-	if (delegate == self) {
-		[super setDelegate:self];
-	}
-	else if (delegate == nil) {
-		// UIActionSheet dealloc sets delegate to nil
-		if (_isDeallocating) {
-			[super setDelegate:nil];
-		}
-		else {
-			[super setDelegate:self];
-		}
-		_externalDelegate = nil;
-	}
-	else {
-		_externalDelegate = delegate;
-	}
+    [NSException raise:@"CWFoundationException" format:@"Don't set delegate, set externalDelegate instead."];
 }
 
 @end

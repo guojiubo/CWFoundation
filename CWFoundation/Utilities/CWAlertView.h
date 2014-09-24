@@ -12,6 +12,8 @@ typedef void (^CWAlertViewBlock) (void);
 
 @interface CWAlertView : UIAlertView
 
+@property (nonatomic, weak) id /*<UIAlertViewDelegate>*/ externalDelegate;
+
 - (instancetype)initWithTitle:(NSString *)title message:(NSString *)message;
 
 - (NSInteger)addButtonWithTitle:(NSString *)title block:(CWAlertViewBlock)block;

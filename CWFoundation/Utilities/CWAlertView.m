@@ -14,19 +14,9 @@
 
 @implementation CWAlertView
 {
-	__weak id <UIAlertViewDelegate> _externalDelegate;
-    
 	NSMutableDictionary *_actionsPerIndex;
     
 	CWAlertViewBlock _cancelBlock;
-    
-	BOOL _isDeallocating;
-}
-
-
-- (void)dealloc
-{
-	_isDeallocating = YES;
 }
 
 - (id)init
@@ -34,7 +24,7 @@
     self = [super init];
     if (self) {
         _actionsPerIndex = [[NSMutableDictionary alloc] init];
-        self.delegate = self;
+        [super setDelegate:self];
     }
     return self;
 }
@@ -106,8 +96,8 @@
 		block();
 	}
     
-	if ([_externalDelegate respondsToSelector:@selector(alertView:clickedButtonAtIndex:)]) {
-		[_externalDelegate alertView:self clickedButtonAtIndex:buttonIndex];
+	if ([self.externalDelegate respondsToSelector:@selector(alertView:clickedButtonAtIndex:)]) {
+		[self.externalDelegate alertView:self clickedButtonAtIndex:buttonIndex];
 	}
 }
 
@@ -117,73 +107,53 @@
 		_cancelBlock();
 	}
     
-	if ([_externalDelegate respondsToSelector:@selector(alertViewCancel:)]) {
-		[_externalDelegate alertViewCancel:self];
+	if ([self.externalDelegate respondsToSelector:@selector(alertViewCancel:)]) {
+		[self.externalDelegate alertViewCancel:self];
 	}
 }
 
 - (void)willPresentAlertView:(UIAlertView *)alertView
 {
-	if ([_externalDelegate respondsToSelector:@selector(willPresentAlertView:)]) {
-		[_externalDelegate willPresentAlertView:self];
+	if ([self.externalDelegate respondsToSelector:@selector(willPresentAlertView:)]) {
+		[self.externalDelegate willPresentAlertView:self];
 	}
 }
 
 - (void)didPresentAlertView:(UIAlertView *)alertView
 {
-	if ([_externalDelegate respondsToSelector:@selector(didPresentAlertView:)]) {
-		[_externalDelegate didPresentAlertView:self];
+	if ([self.externalDelegate respondsToSelector:@selector(didPresentAlertView:)]) {
+		[self.externalDelegate didPresentAlertView:self];
 	}
 }
 
 - (void)alertView:(UIAlertView *)alertView willDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-	if ([_externalDelegate respondsToSelector:@selector(alertView:willDismissWithButtonIndex:)]) {
-		[_externalDelegate alertView:self willDismissWithButtonIndex:buttonIndex];
+	if ([self.externalDelegate respondsToSelector:@selector(alertView:willDismissWithButtonIndex:)]) {
+		[self.externalDelegate alertView:self willDismissWithButtonIndex:buttonIndex];
 	}
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex
 {
-	if ([_externalDelegate respondsToSelector:@selector(alertView:didDismissWithButtonIndex:)]) {
-		[_externalDelegate alertView:self didDismissWithButtonIndex:buttonIndex];
+	if ([self.externalDelegate respondsToSelector:@selector(alertView:didDismissWithButtonIndex:)]) {
+		[self.externalDelegate alertView:self didDismissWithButtonIndex:buttonIndex];
 	}
 }
 
 - (BOOL)alertViewShouldEnableFirstOtherButton:(UIAlertView *)alertView
 {
-	if ([_externalDelegate respondsToSelector:@selector(alertViewShouldEnableFirstOtherButton:)]) {
-		return [_externalDelegate alertViewShouldEnableFirstOtherButton:self];
+	if ([self.externalDelegate respondsToSelector:@selector(alertViewShouldEnableFirstOtherButton:)]) {
+		return [self.externalDelegate alertViewShouldEnableFirstOtherButton:self];
 	}
     
 	return YES;
 }
 
-#pragma mark - Properties
-
-- (id <UIAlertViewDelegate>)delegate
-{
-	return _externalDelegate;
-}
+#pragma mark - Properties 
 
 - (void)setDelegate:(id <UIAlertViewDelegate>)delegate
 {
-	if (delegate == self) {
-		[super setDelegate:self];
-	}
-	else if (delegate == nil) {
-		// UIAlertView dealloc sets delegate to nil
-		if (_isDeallocating) {
-			[super setDelegate:nil];
-		}
-		else {
-			[super setDelegate:self];
-			_externalDelegate = nil;
-		}
-	}
-	else {
-		_externalDelegate = delegate;
-	}
+    [NSException raise:@"CWFoundationException" format:@"Don't set delegate, set externalDelegate instead."];
 }
 
 @end

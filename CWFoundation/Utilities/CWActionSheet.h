@@ -12,6 +12,8 @@ typedef void (^CWActionSheetBlock) (void);
 
 @interface CWActionSheet : UIActionSheet
 
+@property (nonatomic, weak) id /*<UIActionSheetDelegate>*/ externalDelegate;
+
 - (instancetype)initWithTitle:(NSString *)title;
 
 - (NSInteger)addButtonWithTitle:(NSString *)title block:(CWActionSheetBlock)block;

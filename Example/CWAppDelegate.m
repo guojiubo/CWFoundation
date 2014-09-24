@@ -15,7 +15,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    NSLog(@"%@", [UIApplication cw_temporaryPath]);
+    CWActionSheet *alert = [[CWActionSheet alloc] initWithTitle:nil];
+    [alert addCancelButtonWithTitle:@"cancel" block:^{
+        NSLog(@"cancel");
+    }];
+    [alert addButtonWithTitle:@"ok" block:^{
+        NSLog(@"ok");
+    }];
+    [alert addButtonWithTitle:@"ok2" block:^{
+        NSLog(@"ok2");
+    }];
+    [alert showInView:self.window];
     
     [self.window setBackgroundColor:[UIColor cw_randomColor]];
     [self.window makeKeyAndVisible];
