@@ -31,6 +31,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'Utilities' do |ss|
     ss.source_files = 'CWFoundation/Utilities/*.{h,m}'
+    ss.dependency 'CWFoundation/Foundation+CWAdditions'
   end
 
 end
