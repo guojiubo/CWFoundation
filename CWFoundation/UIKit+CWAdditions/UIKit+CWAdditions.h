@@ -12,5 +12,7 @@
 #import "UIScrollView+CWAdditions.h"
 #import "UINavigationController+CWAdditions.h"
 #import "UIWebView+CWAdditions.h"
+#import "UIImage+CWAdditions.h"
+#import "UITextField+CWAdditions.h"
 
 
