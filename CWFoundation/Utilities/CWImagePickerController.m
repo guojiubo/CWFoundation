@@ -30,6 +30,15 @@
     return self;
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    
+    if (self.restoreStatusBarBlock) {
+        self.restoreStatusBarBlock();
+    }
+}
+
 #pragma mark - UIImagePicker Delegate
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
