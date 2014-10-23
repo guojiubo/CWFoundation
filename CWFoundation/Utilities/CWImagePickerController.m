@@ -45,27 +45,33 @@
             self.fullResolutionImage = [self fullResolutionImageForAsset:asset];
         }
         
-        [self dismissViewControllerAnimated:YES completion:^{
+        void (^completionBlock) (void) = ^{
             if (self.finishedBlock) {
                 self.finishedBlock(self, info);
             }
-        }];
+        };
+        
+        self.autoDismiss ? [self dismissViewControllerAnimated:YES completion:completionBlock] : completionBlock();
     } failureBlock:^(NSError *error) {
-        [self dismissViewControllerAnimated:YES completion:^{
+        void (^completionBlock) (void) = ^{
             if (self.finishedBlock) {
                 self.finishedBlock(self, info);
             }
-        }];
+        };
+        
+        self.autoDismiss ? [self dismissViewControllerAnimated:YES completion:completionBlock] : completionBlock();
     }];
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    [self dismissViewControllerAnimated:YES completion:^{
+    void (^completionBlock) (void) = ^{
         if (self.cancelBlock) {
             self.cancelBlock(self);
         }
-    }];
+    };
+    
+    self.autoDismiss ? [self dismissViewControllerAnimated:YES completion:completionBlock] : completionBlock();
 }
 
 #pragma mark - ALAssets Helper Methods

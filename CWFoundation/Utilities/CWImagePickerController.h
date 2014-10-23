@@ -19,4 +19,7 @@
 @property (nonatomic, strong, readonly) UIImage *fullResolutionImage;
 @property (nonatomic, strong, readonly) UIImage *fullScreenImage;
 
+// Determine whether auto dimiss view controller after finish or cancel picking image, defaults to NO
+@property (nonatomic, assign) BOOL autoDismiss;
+
 @end
