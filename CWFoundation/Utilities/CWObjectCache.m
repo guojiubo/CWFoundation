@@ -96,8 +96,8 @@ static const NSUInteger kDefaultCacheMaxCacheSize = 1024 * 1024 * 512;   // 512M
             [fileManager createDirectoryAtPath:[self cachePath] withIntermediateDirectories:YES attributes:nil error:NULL];
         }
         
-        if ([fileManager createFileAtPath:[self cachePathForKey:key] contents:data attributes:nil]) {
-            NSLog(@"%@ saved to disk!", key);
+        if (![fileManager createFileAtPath:[self cachePathForKey:key] contents:data attributes:nil]) {
+            NSLog(@"Failed save to disk.");
         }
     });
 }
