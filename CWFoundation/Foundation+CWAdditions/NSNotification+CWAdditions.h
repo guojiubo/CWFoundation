@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CWNotificationConstans.h"
+#import "CWFoundationConstans.h"
 
 @interface NSNotification (CWAdditions)
 

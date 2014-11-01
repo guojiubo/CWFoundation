@@ -11,6 +11,8 @@
 #import "NSMutableAttributedString+CWAdditions.h"
 #import "NSNotification+CWAdditions.h"
 #import "NSNotificationCenter+CWAdditions.h"
+#import "NSError+CWAdditions.h"
+
 
 
 

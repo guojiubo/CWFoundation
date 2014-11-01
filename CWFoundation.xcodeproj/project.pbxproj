@@ -10,7 +10,7 @@
 		418D4B1919E68B21007D60BD /* CWPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D4B1819E68B21007D60BD /* CWPlaceholderTextView.m */; };
 		418D4B1C19E68B4E007D60BD /* UIImage+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D4B1B19E68B4E007D60BD /* UIImage+CWAdditions.m */; };
 		418D4B1F19E68BEE007D60BD /* UITextField+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 418D4B1E19E68BEE007D60BD /* UITextField+CWAdditions.m */; };
-		A0822E5619B1AF1900A3DB53 /* CWNotificationConstans.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E3C19B1AF1900A3DB53 /* CWNotificationConstans.m */; };
+		A0822E5619B1AF1900A3DB53 /* CWFoundationConstans.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E3C19B1AF1900A3DB53 /* CWFoundationConstans.m */; };
 		A0822E5719B1AF1900A3DB53 /* NSArray+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E3F19B1AF1900A3DB53 /* NSArray+CWAdditions.m */; };
 		A0822E5819B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4119B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.m */; };
 		A0822E5919B1AF1900A3DB53 /* NSNotification+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0822E4319B1AF1900A3DB53 /* NSNotification+CWAdditions.m */; };
@@ -41,6 +41,7 @@
 		A0E6458519AF67AA00A6731E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0E6457F19AF67AA00A6731E /* InfoPlist.strings */; };
 		A0E6458619AF67AA00A6731E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E6458119AF67AA00A6731E /* Images.xcassets */; };
 		A0E6458719AF67AA00A6731E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E6458219AF67AA00A6731E /* main.m */; };
+		BC5D71B51A052AE00094B82F /* NSError+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D71B41A052AE00094B82F /* NSError+CWAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,8 @@
 		418D4B1D19E68BEE007D60BD /* UITextField+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CWAdditions.h"; sourceTree = "<group>"; };
 		418D4B1E19E68BEE007D60BD /* UITextField+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CWAdditions.m"; sourceTree = "<group>"; };
 		A0822E3919B1AF1900A3DB53 /* CWFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWFoundation.h; sourceTree = "<group>"; };
-		A0822E3B19B1AF1900A3DB53 /* CWNotificationConstans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWNotificationConstans.h; sourceTree = "<group>"; };
-		A0822E3C19B1AF1900A3DB53 /* CWNotificationConstans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWNotificationConstans.m; sourceTree = "<group>"; };
+		A0822E3B19B1AF1900A3DB53 /* CWFoundationConstans.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CWFoundationConstans.h; sourceTree = "<group>"; };
+		A0822E3C19B1AF1900A3DB53 /* CWFoundationConstans.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CWFoundationConstans.m; sourceTree = "<group>"; };
 		A0822E3D19B1AF1900A3DB53 /* Foundation+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Foundation+CWAdditions.h"; sourceTree = "<group>"; };
 		A0822E3E19B1AF1900A3DB53 /* NSArray+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+CWAdditions.h"; sourceTree = "<group>"; };
 		A0822E3F19B1AF1900A3DB53 /* NSArray+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+CWAdditions.m"; sourceTree = "<group>"; };
@@ -118,6 +119,8 @@
 		A0E6458019AF67AA00A6731E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A0E6458119AF67AA00A6731E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0E6458219AF67AA00A6731E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC5D71B31A052AE00094B82F /* NSError+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CWAdditions.h"; sourceTree = "<group>"; };
+		BC5D71B41A052AE00094B82F /* NSError+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CWAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				A0822E3D19B1AF1900A3DB53 /* Foundation+CWAdditions.h */,
-				A0822E3B19B1AF1900A3DB53 /* CWNotificationConstans.h */,
-				A0822E3C19B1AF1900A3DB53 /* CWNotificationConstans.m */,
+				A0822E3B19B1AF1900A3DB53 /* CWFoundationConstans.h */,
+				A0822E3C19B1AF1900A3DB53 /* CWFoundationConstans.m */,
 				A0822E3E19B1AF1900A3DB53 /* NSArray+CWAdditions.h */,
 				A0822E3F19B1AF1900A3DB53 /* NSArray+CWAdditions.m */,
 				A0822E4019B1AF1900A3DB53 /* NSMutableAttributedString+CWAdditions.h */,
@@ -171,6 +174,8 @@
 				A0822E4519B1AF1900A3DB53 /* NSNotificationCenter+CWAdditions.m */,
 				A0822E4619B1AF1900A3DB53 /* NSString+CWAdditions.h */,
 				A0822E4719B1AF1900A3DB53 /* NSString+CWAdditions.m */,
+				BC5D71B31A052AE00094B82F /* NSError+CWAdditions.h */,
+				BC5D71B41A052AE00094B82F /* NSError+CWAdditions.m */,
 			);
 			path = "Foundation+CWAdditions";
 			sourceTree = "<group>";
@@ -399,13 +404,14 @@
 				A0822E6619B21EE200A3DB53 /* CWActionSheet.m in Sources */,
 				A0822E6919B21EF500A3DB53 /* CWAlertView.m in Sources */,
 				A0822E5D19B1AF1900A3DB53 /* UIColor+CWAdditions.m in Sources */,
-				A0822E5619B1AF1900A3DB53 /* CWNotificationConstans.m in Sources */,
+				A0822E5619B1AF1900A3DB53 /* CWFoundationConstans.m in Sources */,
 				A0E6458319AF67AA00A6731E /* CWAppDelegate.m in Sources */,
 				A0822E7319B2273E00A3DB53 /* CWFieldValidation.m in Sources */,
 				A0822E7619B227B800A3DB53 /* CWObjectCache.m in Sources */,
 				A0822E6019B1AF1900A3DB53 /* UIView+CWAdditions.m in Sources */,
 				A0E6458719AF67AA00A6731E /* main.m in Sources */,
 				418D4B1F19E68BEE007D60BD /* UITextField+CWAdditions.m in Sources */,
+				BC5D71B51A052AE00094B82F /* NSError+CWAdditions.m in Sources */,
 				A0822E5B19B1AF1900A3DB53 /* NSString+CWAdditions.m in Sources */,
 				A0822E5919B1AF1900A3DB53 /* NSNotification+CWAdditions.m in Sources */,
 				A0822E5F19B1AF1900A3DB53 /* UIScrollView+CWAdditions.m in Sources */,
