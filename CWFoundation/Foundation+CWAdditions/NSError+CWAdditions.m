@@ -10,7 +10,7 @@
 
 @implementation NSError (CWAdditions)
 
-+ (instancetype)errorWithDomain:(NSString *)domain code:(NSInteger)code message:(NSString *)message
++ (instancetype)cw_errorWithDomain:(NSString *)domain code:(NSInteger)code message:(NSString *)message
 {
     if (!message) {
         return [self errorWithDomain:domain code:code userInfo:nil];
@@ -18,9 +18,13 @@
     return [NSError errorWithDomain:domain code:code userInfo:@{CWErrorMessageKey: message}];
 }
 
-- (NSString *)errorMessage
+- (NSString *)cw_errorMessage
 {
-    return self.userInfo[CWErrorMessageKey];
+    NSString *message = self.userInfo[CWErrorMessageKey];
+    if (!message) {
+        message = [self localizedDescription];
+    }
+    return message;
 }
 
 @end

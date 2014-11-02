@@ -11,8 +11,8 @@
 
 @interface NSError (CWAdditions)
 
-+ (instancetype)errorWithDomain:(NSString *)domain code:(NSInteger)code message:(NSString *)message;
++ (instancetype)cw_errorWithDomain:(NSString *)domain code:(NSInteger)code message:(NSString *)message;
 
-- (NSString *)errorMessage;
+- (NSString *)cw_errorMessage;
 
 @end
