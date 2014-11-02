@@ -11,9 +11,9 @@
 
 @interface NSNotificationCenter (CWAdditions)
 
-/**
- *  Put a user object into user info Dictionary
- */
+// Put a user object into user info Dictionary
 - (void)cw_postNotificationName:(NSString *)aName object:(id)object userObject:(id)userObject;
+
+- (void)cw_postNotificationOnMainThreadName:(NSString *)aName sender:(id)sender userObject:(id)userObject;
 
 @end
