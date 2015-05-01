@@ -14,5 +14,6 @@
 #import "UIWebView+CWAdditions.h"
 #import "UIImage+CWAdditions.h"
 #import "UITextField+CWAdditions.h"
+#import "UIScrollView+CWFooterView.h"
 
 

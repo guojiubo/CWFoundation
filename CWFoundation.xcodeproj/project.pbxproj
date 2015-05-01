@@ -186,13 +186,13 @@
 		A0822E4819B1AF1900A3DB53 /* UIKit+CWAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				A0822E4D19B1AF1900A3DB53 /* UIKit+CWAdditions.h */,
 				BC0402BC1AF3554100310160 /* UIScrollView+CWFooterView.h */,
 				BC0402BD1AF3554100310160 /* UIScrollView+CWFooterView.m */,
 				A0822E4919B1AF1900A3DB53 /* UIApplication+CWAdditions.h */,
 				A0822E4A19B1AF1900A3DB53 /* UIApplication+CWAdditions.m */,
 				A0822E4B19B1AF1900A3DB53 /* UIColor+CWAdditions.h */,
 				A0822E4C19B1AF1900A3DB53 /* UIColor+CWAdditions.m */,
-				A0822E4D19B1AF1900A3DB53 /* UIKit+CWAdditions.h */,
 				A0822E4E19B1AF1900A3DB53 /* UINavigationController+CWAdditions.h */,
 				A0822E4F19B1AF1900A3DB53 /* UINavigationController+CWAdditions.m */,
 				A0822E5019B1AF1900A3DB53 /* UIScrollView+CWAdditions.h */,
