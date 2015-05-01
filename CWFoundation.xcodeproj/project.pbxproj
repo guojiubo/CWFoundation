@@ -41,6 +41,7 @@
 		A0E6458519AF67AA00A6731E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A0E6457F19AF67AA00A6731E /* InfoPlist.strings */; };
 		A0E6458619AF67AA00A6731E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0E6458119AF67AA00A6731E /* Images.xcassets */; };
 		A0E6458719AF67AA00A6731E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E6458219AF67AA00A6731E /* main.m */; };
+		BC0402BE1AF3554100310160 /* UIScrollView+CWFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0402BD1AF3554100310160 /* UIScrollView+CWFooterView.m */; };
 		BC5D71B51A052AE00094B82F /* NSError+CWAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BC5D71B41A052AE00094B82F /* NSError+CWAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -119,6 +120,8 @@
 		A0E6458019AF67AA00A6731E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A0E6458119AF67AA00A6731E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A0E6458219AF67AA00A6731E /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC0402BC1AF3554100310160 /* UIScrollView+CWFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CWFooterView.h"; sourceTree = "<group>"; };
+		BC0402BD1AF3554100310160 /* UIScrollView+CWFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CWFooterView.m"; sourceTree = "<group>"; };
 		BC5D71B31A052AE00094B82F /* NSError+CWAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+CWAdditions.h"; sourceTree = "<group>"; };
 		BC5D71B41A052AE00094B82F /* NSError+CWAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+CWAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,6 +186,8 @@
 		A0822E4819B1AF1900A3DB53 /* UIKit+CWAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				BC0402BC1AF3554100310160 /* UIScrollView+CWFooterView.h */,
+				BC0402BD1AF3554100310160 /* UIScrollView+CWFooterView.m */,
 				A0822E4919B1AF1900A3DB53 /* UIApplication+CWAdditions.h */,
 				A0822E4A19B1AF1900A3DB53 /* UIApplication+CWAdditions.m */,
 				A0822E4B19B1AF1900A3DB53 /* UIColor+CWAdditions.h */,
@@ -404,6 +409,7 @@
 				A0822E6619B21EE200A3DB53 /* CWActionSheet.m in Sources */,
 				A0822E6919B21EF500A3DB53 /* CWAlertView.m in Sources */,
 				A0822E5D19B1AF1900A3DB53 /* UIColor+CWAdditions.m in Sources */,
+				BC0402BE1AF3554100310160 /* UIScrollView+CWFooterView.m in Sources */,
 				A0822E5619B1AF1900A3DB53 /* CWFoundationConstans.m in Sources */,
 				A0E6458319AF67AA00A6731E /* CWAppDelegate.m in Sources */,
 				A0822E7319B2273E00A3DB53 /* CWFieldValidation.m in Sources */,
